@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #0d1117;
   color: #e6edf3;
@@ -167,6 +171,17 @@ footer {
   text-align: center;
   padding: 20px;
   color: #8b949e;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 760px) {
